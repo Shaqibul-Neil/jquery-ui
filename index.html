@@ -1,0 +1,570 @@
+<!doctype html>
+<html>
+<head>
+
+	<!--meta tags-->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jquery UI</title>
+
+	<!--css links-->
+	<link rel="stylesheet" href="vendor/wow_js/css/animate.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="vendor/lightbox/dist/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+</head>
+<body>
+<div class="container mt-5 mb-5">
+	
+	<h2>Drag</h2>
+	<div id="draggable" class="bg-primary text-white">
+		<p>Drag me around or resize me</p>
+	</div>
+
+	 <!-- contained within -->
+	<h3>Constrain movement along an axis:</h3>
+ 
+	<div id="draggableNew">
+		<p>I can be dragged only vertically</p>
+	</div>
+
+	<div id="draggableNew2" class="draggable ui-widget-content">
+		<p>I can be dragged only horizontally</p>
+	</div>
+
+	<h3>Or to within another DOM element:</h3>
+	<div id="containment-wrapper">
+		<div id="draggableNew3">
+			<p>I'm contained within the box</p>
+		</div>
+		<br>
+		<div class="draggableNew5">
+			<p class="m-0" id="draggableNew4">I'm contained within my parent</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- dragged only by this handle -->
+	<h2>dragged only by handle</h2>
+	<div class="draggerNew">
+		<div id="draggableNew6" class="ui-widget-content">
+			<p class="ui-widget-header1">I can be dragged only by this handle</p>
+		</div>
+
+		<div id="draggableNew7" class="ui-widget-content">
+			<p>You can drag me around…</p>
+			<p class="ui-widget-header2">…but you can't drag me by this handle.</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- draggable sortable -->
+	<h2>draggable sortable</h2>
+	<div class="ui-sortable">
+		<ul>
+			<li id="draggableSort" class="bg-dark text-white">Drag me down</li>
+		</ul>
+
+		<ul id="dragSortable">
+			<li class="ui-state-default">Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li class="liSortable">Item 4</li>
+			<li>Item 5</li>
+		</ul>
+	</div>
+	<div id="draggableCursor" class="ui-widget-content">
+		<p>Custom helper (in combination with cursorAt)</p>
+	</div>
+
+	<hr>
+
+	<!-- imgDrag -->
+	<h2>imgDrag</h2>
+	<div class="drag2">
+		<img src="images/london.png" alt="" class="imgDrag">
+	</div>
+
+	<hr>
+
+	<!-- droppable -->
+	<h2>droppable</h2>
+	<div class="dradro">
+		<div id="draggable2" class="ui-widget-content">
+			<p class="dragpara1">Drag me to my target</p>
+		</div>
+
+		<div id="droppable" class="ui-widget-header">
+			<p class="dragpara2">Drop here</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- imgDragDrop -->
+	<h2>imgDragDrop</h2>
+	<div class="imgrow">
+		<div class="row">
+			<div class="col-lg">
+				<div class="imgDragDrop">
+					<div class="row">
+						<div class="col-lg-5 align-content-center">
+							<div class="draggable3">
+								<img src="images/london.png" alt="" class="imgDrag2">
+							</div>
+						</div>
+						<div class="col-lg-7 align-content-center">
+							<div class="droppable2">
+								<p class="imgpDrop">Drop here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- selection -->
+	<h2>selection</h2>
+	<div class="selection">
+		<ol id="selectable" class="list-unstyled">
+			<li class="items">Item 1</li>
+			<li class="items">Item 2</li>
+			<li class="items">Item 3</li>
+			<li class="items">Item 4</li>
+			<li class="items">Item 5</li>
+		</ol>
+	</div>
+
+	<hr>
+
+	<h2>selection sortable</h2>
+	<div class="selection">
+		<ol id="sortable" class="list-unstyled">
+			<li class="items">Item 1</li>
+			<li class="items">Item 2</li>
+			<li class="items">Item 3</li>
+			<li class="items">Item 4</li>
+			<li class="items">Item 5</li>
+		</ol>
+	</div>
+
+	<hr>
+
+	<!-- accordion -->
+	<h2>accordion</h2>
+	<div class="row">
+		<div class="col-lg-6">
+			<div id="accordion">
+				<h3>Section 1</h3>
+				<div>
+					<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+					</p>
+				</div>
+				<h3>Section 2</h3>
+				<div>
+					<p>
+						Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+						purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+						velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+						suscipit faucibus urna.
+					</p>
+				</div>
+				<h3>Section 3</h3>
+				<div>
+					<p>
+						Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+						Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+						ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+						lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+					</p>
+					<ul>
+						<li>List item one</li>
+						<li>List item two</li>
+						<li>List item three</li>
+					</ul>
+				</div>
+				<h3>Section 4</h3>
+				<div>
+					<p>
+						Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+						et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+						faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+						mauris vel est.
+					</p>
+					<p>
+						Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+						inceptos himenaeos.
+					</p>
+				</div>
+			</div>
+			<button type="button" class="btn btn-primary iconsToggle">icons Toggle</button>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- autocomplete -->
+	<h2>autocomplete</h2>
+	<div class="xyz">
+		<form action="#">
+			<input type="text" class="form-control autoInput w-25">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+
+	<hr>
+
+	<!-- Datepicker -->
+	<h2>Datepicker</h2>
+	<p>Date: <input type="text" id="datepicker"></p>
+
+	<hr>
+
+	<p>Date: <input type="text" id="datepicker2"></p>
+	<p>Animations:<br>
+		<select id="anim">
+			<option value="show">Show (default)</option>
+			<option value="slideDown">Slide down</option>
+			<option value="fadeIn">Fade in</option>
+			<option value="blind">Blind (UI Effect)</option>
+			<option value="bounce">Bounce (UI Effect)</option>
+			<option value="clip">Clip (UI Effect)</option>
+			<option value="drop">Drop (UI Effect)</option>
+			<option value="fold">Fold (UI Effect)</option>
+			<option value="slide">Slide (UI Effect)</option>
+			<option value="">None</option>
+		</select>
+	</p>
+
+	<hr>
+	
+	<label for="from">From</label>
+	<input type="text" id="from" name="from">
+	<label for="to">to</label>
+	<input type="text" id="to" name="to">
+
+	<hr>
+
+
+	<!-- Menu -->
+	<h2>Menus</h2>
+	<ul id="menu">
+		<li><div>Toys (n/a)</div></li>
+		<li><div>Books</div></li>
+		<li><div>Clothing</div></li>
+		<li><div>Electronics</div>
+			<ul>
+				<li><div>Home Entertainment</div></li>
+				<li><div>Car Hifi</div></li>
+				<li><div>Utilities</div></li>
+			</ul>
+		</li>
+		<li><div>Movies</div></li>
+		<li><div>Music</div>
+			<ul>
+				<li><div>Rock</div>
+					<ul>
+						<li><div>Alternative</div></li>
+						<li><div>Classic</div></li>
+					</ul>
+				</li>
+				<li><div>Jazz</div>
+					<ul>
+						<li><div>Freejazz</div></li>
+						<li><div>Big Band</div></li>
+						<li><div>Modern</div></li>
+					</ul>
+				</li>
+				<li><div>Pop</div></li>
+			</ul>
+		</li>
+		<li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+	</ul>
+
+	<hr>
+
+	<ul id="menu2">
+		<li class="ui-widget-header-menu"><div>Category 1</div></li>
+		<li><div>Option 1</div></li>
+		<li><div>Option 2</div></li>
+		<li><div>Option 3</div></li>
+		<li class="ui-widget-header-menu"><div>Category 2</div></li>
+		<li><div>Option 4</div></li>
+		<li><div>Option 5</div></li>
+		<li><div>Option 6</div></li>
+	</ul>
+
+	<hr>
+
+	<!-- progress bar -->
+	<h2>Progress Bar</h2>
+	<div id="progressbar"><div class="progress-label">Loading...</div></div>
+
+	<hr>
+
+	<h2>File Download</h2>
+	<div id="dialog" title="File Download">
+		<div class="progress-label2">Starting download...</div>
+		<div id="progressbar2"></div>
+	</div>
+	<button id="downloadButton" class="btn btn-primary">Start Download</button>
+
+	<hr>
+
+	<div id="progressbar3"></div>
+	<button id="numButton" class="btn btn-primary exbtn">Random Value - Determinate</button>
+	<button id="falseButton" class="btn btn-primary exbtn">Indeterminate</button>
+	<button id="colorButton" class="btn btn-primary exbtn">Random Color</button>
+
+	<hr>
+
+	<!-- Tabs -->
+	<h2>Tabs</h2>
+	<div id="tabs">
+		<ul>
+			<li><a href="#tabs-1">Nunc tincidunt</a></li>
+			<li><a href="#tabs-2">Proin dolor</a></li>
+			<li><a href="#tabs-3">Aenean lacinia</a></li>
+		</ul>
+		<div id="tabs-1">
+			<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+		</div>
+		<div id="tabs-2">
+			<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+		</div>
+		<div id="tabs-3">
+			<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+			<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- tooltip -->
+	<h2>tooltip</h2>
+	<p><a id="show-option" href="https://jqueryui.com/demos/tooltip/#option-show" title="slide down on show">show</a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, est?</p>
+	<a id="hide-option" href="https://jqueryui.com/demos/tooltip/#option-hide" title="explode on hide">hide</a> options.</p>
+
+	<!-- counter -->
+
+	<section class="cntrUp">
+		<div class="row">
+
+			<div class="col-lg-4">
+				<div class="projects text-center">
+					<h2>Projects</h2>
+					<h3 class="counter">1,234,567.00</h3>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="projects text-center">
+					<h2>Projects</h2>
+					<h3 class="counter">1,234,567.00</h3>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="projects text-center">
+					<h2>Projects</h2>
+					<h3 class="counter">1,234,567.00</h3>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<span class="counters">1,234,567.89</span>
+
+	<section class="ant-counter">
+		<div class="row">
+			<div class="col-md-4" >
+				<h2><span class="counter-2">2,523</span></h2>
+				<h3 class="cntH3">Customers</h3>
+			</div> 
+			<div class="col-md-4">
+				<h2><span class="counter-2">63,075</span></h2>
+				<h3 class="cntH3">Total Web Pages</h3>
+			</div>
+			<div class="col-md-4">
+				<h2><span class="counter-2">12,218</span></h2>
+				<h3 class="cntH3">Cups Of Coffee</h3>
+			</div>
+		</div>
+	</section>
+
+	<section class="wow slideInDown animWow bg-danger" data-wow-duration="5s" data-wow-delay="1s">
+    </section>
+    <hr>
+    <section class="wow slideInLeft animWow bg-warning" data-wow-duration="5s" data-wow-delay="1s">
+    </section>
+    <hr>
+    <section class="wow slideInDown animWow bg-dark" data-wow-duration="5s" data-wow-delay="1s">
+    </section>
+
+    <section class="mixit mt-5">
+    	<div class="filterDiv">
+    		<div class="row mb-3">
+    			<div class="col-lg-12">
+    				<div class="text-center">
+    					<a href="#all" data-filter="all" class= "btn btn-primary">All</a>
+    					<a href="#web" data-filter=".web" class= "btn btn-danger">Web Design</a>
+    					<a href="#dev" data-filter=".dev" class= "btn btn-warning">Web Development</a>
+    					<a href="#wpress" data-filter=".wpress" class= "btn btn-dark">Wordpress</a>
+    					<a href="#php" data-filter=".php" class= "btn btn-success">Php</a>
+
+    					<a data-sort="order:asc" class= "btn btn-outline-dark">Ascending</a>
+    					<a data-sort="order:descending" class= "btn btn-outline-dark">Descending</a>
+    					<a data-sort="random" class= "btn btn-outline-dark">Random</a>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="row" id="mixFilter">
+
+    			<div class="col-lg-4 mt-3 mix web" data-order="1">
+    				<div class="d_img">
+    					<img src="images/portfolio.png" class="w-100" alt="">
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3 mix web" data-order="2">
+    				<div class="d_img">
+    					<img src="images/portfolio2.png" class="w-100" alt="">
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3 mix dev" data-order="3">
+    				<div class="d_img">
+    					<img src="images/portfolio3.png" class="w-100" alt="">
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3 mix dev" data-order="4">
+    				<div class="d_img">
+    					<img src="images/portfolio4.png" class="w-100" alt="">
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3 mix wpress" data-order="5">
+    				<div class="d_img">
+    					<img src="images/portfolio5.png" class="w-100" alt="">
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3 mix php" data-order="6">
+    				<div class="d_img">
+    					<img src="images/portfolio6.png" class="w-100" alt="">
+    				</div>
+    			</div>
+
+    		</div>
+    	</div>
+    </section>
+
+    <section class="light mt-5">
+
+    	<div class="row">
+    			<div class="col-lg-12">
+    				<div class="l_text text-center">
+    					<h2>LightBox</h2>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3">
+    				<div class="l_img">
+    					<a href="images/banner.jpg" class="w-100" data-lightbox="image-1" data-title="Web Development">
+    						<img src="images/portfolio.png" class="w-100" alt="">
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3">
+    				<div class="l_img">
+    					<a href="images/banner.jpg" class="w-100" data-lightbox="image-1" data-title="Web Development">
+    						<img src="images/portfolio2.png" class="w-100" alt="">
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3">
+    				<div class="l_img">
+    					<a href="images/banner.jpg" class="w-100" data-lightbox="image-1" data-title="Web Development">
+    						<img src="images/portfolio3.png" class="w-100" alt="">
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3">
+    				<a href="images/portfolio4.png" class="w-100" data-lightbox="image-1" data-title="Web Development">
+    					<img src="images/portfolio4.png" class="w-100" alt="">
+    				</a>
+    			</div>
+
+    			<div class="col-lg-4 mt-3">
+    				<div class="l_img">
+    					<a href="images/portfolio5.png" class="w-100" data-lightbox="image-1" data-title="Web Development">
+    					<img src="images/portfolio5.png" class="w-100" alt="">
+    				</a>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-4 mt-3">
+    				<a href="images/portfolio6.png" class="w-100" data-lightbox="image-1" data-title="Web Development">
+    					<img src="images/portfolio6.png" class="w-100" alt="">
+    				</a>
+    			</div>
+
+    		</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!--js links-->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="vendor/lightbox/dist/js/lightbox.min.js"></script>
+<script src="vendor/mixitup-3/mixitup.min.js"></script>
+<script src="vendor/wow_js/js/wow.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="vendor/counter_up2/jquery.countup.js"></script>
+<script src="vendor/counter_up/jquery.counterup.min.js"></script>
+<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

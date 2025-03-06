@@ -1,0 +1,138 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#draggable, #draggableNew, #draggableNew2, #draggableNew3, #draggableNew4, #draggableCursor  { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	border: 2px solid black;
+}
+#draggableNew{
+	cursor: n-resize;;
+}
+#draggableNew2{
+	cursor: e-resize;;
+}
+#containment-wrapper{
+	width: 450px; 
+	height: 450px; 
+	border: 2px solid black;
+}
+#draggableNew4{
+	background-color: grey;
+}
+.draggableNew5{
+	width: 250px; 
+	height: 250px; 
+	border: 2px solid black;
+	background-color: red;
+}
+#draggableNew6, #draggableNew7 { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 0 10px 10px 0; 
+}
+#draggableNew6 p { 
+	cursor: move; 
+}
+.ui-widget-header1, .ui-widget-header2{
+	background-color: grey;
+}
+#draggableSort, #dragSortable li { 
+ 	margin: 5px; 
+ 	padding: 5px; 
+ 	width: 150px;
+ 	list-style-type: none;
+ 	border: 2px solid;
+}
+.drag2{
+	width: 450px; 
+	height: 450px;
+}
+.dradro, .draggerNew{
+	height: 200px;
+}
+.ui-sortable{
+	height: 350px;
+}
+#draggable2 { 
+	width: 100px; 
+	height: 100px; 
+	padding: 0.5em; 
+	float: left; 
+	margin: 10px 10px 10px 0; 
+}
+#droppable { 
+  	width: 150px; 
+  	height: 150px; 
+  	padding: 0.5em; 
+  	float: left; 
+  	margin: 10px; 
+}
+.imgrow{
+	height: 500px;
+}
+.droppable2{
+	width: 400px;
+	height: 500px;
+	border: 2px solid;
+}
+#selectable{
+	margin: 0; 
+	padding: 0;
+}
+.items{
+	margin: 10px;
+	padding: 10px;
+	background: #F39814;
+}
+#selectable .ui-selecting{
+	background: black;
+	color: white;
+}
+#selectable .ui-selected{
+	background: powderblue;
+}
+#menu, #menu2{
+	width: 200px;
+}
+#menu li, #menu2 li {
+	list-style: none;
+	width: 200px;
+}
+.ui-widget-header-menu{
+	background-color: grey;
+}
+#progressbar{
+    position: relative;
+}
+.progress-label{
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+#progressbar2 {
+    margin-top: 20px;
+}
+ 
+.progress-label2 {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+ 
+#dialog {
+    display: none;
+}
+#progressbar3  .ui-progressbar-value {
+	background-color: #ccc;
+}
+.counter-2 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+.animWow{
+	height: 400px;
+}
